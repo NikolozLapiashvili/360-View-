@@ -1,0 +1,125 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #202322;
+}
+
+/* Top Navbar */
+.top-navbar {
+  background-color: #7A0E1C;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+.logo-text {
+  font-size: 1.5rem;
+}
+.nav-buttons button {
+  background-color: #c09816;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.nav-buttons button:hover {
+  background-color: #C10230;
+}
+
+/* Main Display */
+.main-display {
+  position: relative;
+  height: calc(100vh - 120px);
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.caption {
+  position: absolute;
+  bottom: 90px;
+  font-size: 1.5rem;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  padding: 10px 20px;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+/* Thumbnail Slider */
+.thumbnail-slider {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+.thumbnail-slider img {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.thumbnail-slider img:hover {
+  transform: scale(1.1);
+}
+
+/* Map Overlay */
+.map-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 3;
+  width: 180px;
+}
+.map-overlay img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #7A0E1C;
+  color: white;
+  padding: 10px;
+  font-size: 0.85rem;
+}
+
+
+
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between image and text */
+}
+
+.logo-icon {
+  height: 0.85 rem; /* match the .logo-text font size */
+  width: auto;
+}
